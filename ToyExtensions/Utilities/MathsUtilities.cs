@@ -7,7 +7,6 @@ namespace Toy.Extensions.Utilities
     {
         public static List<long> GetSumOfPowerOfTwo(long n)
         {
-
             var reminders = new List<int>();
             var powerOfTwo = new List<long>();
             while (n > 0)

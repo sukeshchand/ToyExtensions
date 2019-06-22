@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>ToyExtensions</PackageId>
+    <Authors>sukesh chand</Authors>
+    <Company>takeoveryou.com</Company>
+    <Product>Toy Extensions</Product>
+    <Description>extensions and utilities based on .NET standard</Description>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <NeutralLanguage>aa-ET</NeutralLanguage>
   </PropertyGroup>
 
 </Project>
