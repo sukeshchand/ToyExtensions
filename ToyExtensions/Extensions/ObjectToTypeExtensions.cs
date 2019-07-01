@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Toy.Extensions.Extensions
+﻿namespace Toy.Extensions.Extensions
 {
     public static class ObjectToTypeExtensions
     {
