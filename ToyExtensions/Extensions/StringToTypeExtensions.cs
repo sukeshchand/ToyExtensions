@@ -61,7 +61,16 @@ namespace Toy.Extensions.Extensions
         /// <returns>return ulong? value if valid ulong else return null </returns>
         public static ulong? ToULong(this string value) => ulong.TryParse(value, out ulong uLongValue) ? (ulong?)uLongValue : null;
 
-        public static decimal? ToDecimal(this string value) => decimal.TryParse(value, out decimal intValue) ? (decimal?)intValue : null;
+        /// <summary>
+        /// Convert to decimal
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>return decimal if valid else return null</returns>
+        public static decimal? ToDecimal(this string value) => decimal.TryParse(value, out decimal decimalValue) ? (decimal?)decimalValue : null;
+
+        public static float? ToFloat(this string value) => float.TryParse(value, out float floatValue) ? (float?)floatValue : null;
+
+        public static double? ToDouble(this string value) => double.TryParse(value, out double doubleValue) ? (double?)doubleValue : null;
         
         public static bool? ToBoolean(this string value) => bool.TryParse(value, out bool boolValue) ? (bool?)boolValue : null;
 
