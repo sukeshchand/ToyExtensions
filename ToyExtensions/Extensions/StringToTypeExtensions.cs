@@ -75,6 +75,8 @@ namespace Toy.Extensions.Extensions
         public static bool? ToBoolean(this string value) => bool.TryParse(value, out bool boolValue) ? (bool?)boolValue : null;
 
         public static DateTime? ToDate(this string s) => DateTime.TryParse(s, out DateTime dt) ? (DateTime?)dt : null;
+
+        public static Guid? ToGuid(this string s) => Guid.TryParse(s, out Guid guid) ? (Guid?)guid : null;
     }
 }
 

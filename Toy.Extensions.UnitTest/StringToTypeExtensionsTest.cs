@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Toy.Extensions.Extensions;
 
 namespace Toy.Extensions.UnitTest
@@ -28,6 +29,24 @@ namespace Toy.Extensions.UnitTest
             string strInt = null;
             var intValue = strInt.ToInt();
             Assert.AreEqual(null, intValue);
+        }
+
+        [TestMethod]
+        public void ToGuidSuccessTest()
+        {
+            Guid guid = Guid.NewGuid();
+            string strGuid = guid.ToString();
+            var guidValue = strGuid.ToGuid();
+            Assert.AreEqual(guid, guidValue);
+        }
+
+        [TestMethod]
+        public void ToGuidFailByNullTest()
+        {
+            Guid guid = Guid.NewGuid();
+            string strGuid = guid.ToString() + "__"; // make the guid incorrect
+            var guidValue = strGuid.ToGuid();
+            Assert.AreEqual(null, guidValue, "Exepcted null"); 
         }
 
     }
